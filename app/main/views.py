@@ -4,7 +4,6 @@ from ..models import User,Pitch,Comment
 from .. import db
 from .forms import UpdateProfile,PitchForm,CommentForm
 from flask_login import login_required,current_user
-# import datetime
 
 # Views
 @main.route('/')

@@ -13,7 +13,7 @@ def index():
     View root page function that returns the index page and its data
     '''
 
-    title = 'Home - Welcome to Perfect Pitch'
+    title = 'Welcome to "Know me in one minute!"'
 
     # Getting reviews by category
     interview_piches = Pitch.get_pitches('interview')
@@ -52,7 +52,7 @@ def update_profile(uname):
         return redirect(url_for('.profile',uname=user.username))
 
     return render_template('profile/update.html',form = form)
-    
+
 
 @main.route('/pitch/new', methods = ['GET','POST'])
 @login_required

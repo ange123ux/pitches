@@ -20,7 +20,7 @@ class User(UserMixin,db.Model):
     bio = db.Column(db.String(5000))
     profile_pic_path = db.Column(db.String)
     pass_secure = db.Column(db.String(255))
-    # date_joined = db.Column(db.DateTime,default=datetime.utcnow)
+    date_joined = db.Column(db.DateTime,default=datetime.utcnow)
 
     pitches = db.relationship('Pitch',backref = 'user',lazy = "dynamic")
 

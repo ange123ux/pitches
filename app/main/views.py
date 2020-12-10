@@ -16,9 +16,9 @@ def index():
     title = 'Welcome to "Know me in one minute!"'
 
     # Getting reviews by category
-    interview_piches = Pitch.get_pitches('interview')
-    product_piches = Pitch.get_pitches('product')
-    promotion_pitches = Pitch.get_pitches('promotion')
+    music_piches = Pitch.get_pitches('music')
+    school_piches = Pitch.get_pitches('school')
+    project_pitches = Pitch.get_pitches('project')
 
 
     return render_template('index.html',title = title, interview = interview_piches, product = product_piches, promotion = promotion_pitches)
